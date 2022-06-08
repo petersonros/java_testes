@@ -7,5 +7,15 @@ public class CriaConta {
 		System.out.println(primeiraConta.saldo);
 		
 		primeiraConta.saldo += 100;
+		System.out.println(primeiraConta.saldo);
+		
+		Conta segundaConta = new Conta();
+		segundaConta.saldo = 50;
+		
+		System.out.println("Saldo da primeira conta é " + primeiraConta.saldo);
+		System.out.println("Saldo da segunda conta é " + segundaConta.saldo);
+		
+		System.out.println(primeiraConta.agencia);
+		System.out.println(primeiraConta.numero);
 	}
 }
