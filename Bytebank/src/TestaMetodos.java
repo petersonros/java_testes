@@ -13,7 +13,7 @@ public class TestaMetodos {
 		Conta contaDaMarcela = new Conta();
 		contaDaMarcela.deposita(1000);
 		
-        boolean sucessoTransferencia = contaDaMarcela.transfere(3000, contaDoPaulo);
+        boolean sucessoTransferencia = contaDaMarcela.transfere(300, contaDoPaulo);
         if(sucessoTransferencia) {
             System.out.println("transferencia com sucesso");
         } else {
@@ -22,5 +22,8 @@ public class TestaMetodos {
         }
 		System.out.println(contaDaMarcela.saldo);
 		System.out.println(contaDoPaulo.saldo);
+		
+		contaDoPaulo.titular = "Paulo Silveira";
+		System.out.println(contaDoPaulo.titular);
 	}
 }
