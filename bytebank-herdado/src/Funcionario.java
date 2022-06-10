@@ -1,4 +1,4 @@
-
+// não pode instanciar classe abstrata
 public abstract class Funcionario {
 	
 	private String nome;
