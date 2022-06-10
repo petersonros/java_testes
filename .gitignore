@@ -25,4 +25,6 @@ hs_err_pid*
 # Folders
 .settings
 .metadata
+sitaxe-basica/.gitignore
+ExerciciosTestes/.gitignore
 
