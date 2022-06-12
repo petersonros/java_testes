@@ -5,9 +5,10 @@ public abstract class Funcionario {
 	private String cpf;
 	private double salario;
 	
-	public double getBonificacao() {
-		return this.salario * 0.05;
-	}
+	// metodo sem corpo, não há implementação
+	//	 um método abstrato define apenas a assinatura 
+	//	 (visibilidade, retorno, nome do método e parâmetros).
+	public abstract double getBonificacao();
 	
 	public String getNome() {
 		return nome;
