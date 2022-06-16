@@ -1,6 +1,8 @@
 
-public class Conta {
-	private double saldo = 100;
+
+public abstract class Conta {
+	
+	private double saldo;
 	private int agencia;
 	private int numero;
 	private Cliente titular;
@@ -11,22 +13,22 @@ public class Conta {
 		//System.out.println("O total de contas é: " + Conta.total);
 		this.agencia = agencia;
 		this.numero = numero;
+		// this.saldo = 100;
 		//System.out.println("Estou criando uma conta " + this.numero);
 	}
 	
-	public void deposita(double valor) {
-		this.saldo += valor;
-	}
+	public abstract void deposita(double valor);
 	
-	public void saca(double valor) {
+	public void saca(double valor) throws SaldoInsuficienteException {
 		
 		if(this.saldo < valor) {
-			//problema
+			throw new SaldoInsuficienteException("Saldo; " + this.saldo + ", Valor: " + valor);
 		} 
+		
 		this.saldo -= valor;
 	}
 	
-	public boolean transfere(double valor, Conta destino) {
+	public void transfere(double valor, Conta destino) throws SaldoInsuficienteException {
 		if(this.saldo >= valor) {
 			this.saldo -= valor;
 			destino.deposita(valor);
