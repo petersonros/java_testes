@@ -1,10 +1,9 @@
-
-// gerente È um Funcionario, gerente herda da class Funcionario
-
-public class Designer extends Funcionario{
-
+//Gerente eh um Funcionario, Gerente herda da class Funcionario
+public class Designer extends Funcionario {
+	
 	public double getBonificacao() {
-		System.out.println("chama o metodo bonificacao do Designer");
+		System.out.println("Chamando o m√©todo de bonificacao do Designer");
 		return 200;
-	}
+	}	
+
 }

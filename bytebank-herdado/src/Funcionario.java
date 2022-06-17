@@ -1,20 +1,19 @@
-// não pode instanciar classe abstrata
+
+//nao pode instanciar dessa classe, pq Ã© abstrata
 public abstract class Funcionario {
 	
 	private String nome;
 	private String cpf;
 	private double salario;
 	
-	// metodo sem corpo, não há implementação
-	//	 um método abstrato define apenas a assinatura 
-	//	 (visibilidade, retorno, nome do método e parâmetros).
+	//metodo sem corpo, nao hÃ¡ implementacao
 	public abstract double getBonificacao();
 	
 	public String getNome() {
 		return nome;
 	}
-	public void setNome(String name) {
-		this.nome = name;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 	public String getCpf() {
 		return cpf;
@@ -28,4 +27,8 @@ public abstract class Funcionario {
 	public void setSalario(double salario) {
 		this.salario = salario;
 	}
+	
+	
+	
+
 }
