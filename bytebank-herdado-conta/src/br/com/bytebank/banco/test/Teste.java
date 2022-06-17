@@ -5,7 +5,7 @@ public class Teste {
 	// Array[]
 	public static void main(String[] args) {
 		
-		int[] idades = new int[5]; // inicia com indice 0
+		int[] idades = new int[5]; // inicia no indice 0
 		
 		idades[0] = 29;
 		idades[1] = 39;
