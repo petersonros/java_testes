@@ -6,11 +6,14 @@ import br.com.bytebank.banco.modelo.Cliente;
 import br.com.bytebank.banco.modelo.Conta;
 import br.com.bytebank.banco.modelo.ContaCorrente;
 
-public class Teste {
+public class TesteArrayList {
 
 	public static void main(String[] args) {
 		
+		// Generics
 		ArrayList<Conta> lista  = new ArrayList<Conta>();
+		// tipagem Generics
+		ArrayList<String> nomes = new ArrayList<String>();
 		
 		Conta cc = new ContaCorrente(22, 11);
 		lista.add(cc);		
@@ -37,10 +40,12 @@ public class Teste {
 		
 		System.out.println("-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-<>-");
 		
+// Sem Genecs só funciona como nas linhas comentadas abaixo		
 //		for(Object oRef : lista) {
 //			System.out.println(oRef);
 //		}
 		
+		// funciona assim por causa do "Generics"
 		for(Object conta : lista) {
 		System.out.println(conta);
 	}
