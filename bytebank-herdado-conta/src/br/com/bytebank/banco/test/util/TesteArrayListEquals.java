@@ -19,8 +19,8 @@ public class TesteArrayListEquals {
 		Conta cc2 = new ContaCorrente(22, 22);
 		lista.add(cc2);
 		
-		Conta cc2 = new ContaCorrente(22, 22);
-		boolean existe = lista.contains(cc2);
+		Conta cc3 = new ContaCorrente(22, 22);
+		boolean existe = lista.contains(cc3);
 		
 		System.out.println("Já exite?" + existe);
 		
