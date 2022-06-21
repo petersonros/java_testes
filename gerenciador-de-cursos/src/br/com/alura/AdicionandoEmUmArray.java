@@ -1,7 +1,6 @@
 package br.com.alura;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 
 public class AdicionandoEmUmArray {
@@ -21,8 +20,8 @@ public class AdicionandoEmUmArray {
 		System.out.println(cursos);
 		
 		// Removendo elementos de uma lista
-//		cursos.remove(1);
-//		System.out.println(cursos);
+		cursos.remove(1);
+		System.out.println(cursos);
 		
 		// Acessando elementos da lista
 		String primeiroCurso = cursos.get(0);
