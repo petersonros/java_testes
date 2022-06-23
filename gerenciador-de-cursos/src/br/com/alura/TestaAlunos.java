@@ -15,6 +15,8 @@ public class TestaAlunos {
 		alunos.add("Rena Saggio");
 		alunos.add("Mauricio Aniche");
 		
+		System.out.println(alunos.size());
+		
 		boolean pauloEstaMatriculado = alunos.contains("Paulo Silveira");
 		alunos.remove("Sergio Lopez");
 		
