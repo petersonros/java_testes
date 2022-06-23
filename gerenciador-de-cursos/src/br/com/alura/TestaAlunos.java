@@ -13,6 +13,9 @@ public class TestaAlunos {
 		alunos.add("Rena Saggio");
 		alunos.add("Mauricio Aniche");
 		
+		boolean pauloEstaMatriculado = alunos.contains("Paulo Silveira");
+		System.out.println(pauloEstaMatriculado);
+		
 		for (String aluno : alunos) {
 			System.out.println(aluno);
 		}
