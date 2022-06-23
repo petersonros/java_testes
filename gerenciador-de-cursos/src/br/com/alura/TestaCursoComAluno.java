@@ -19,13 +19,21 @@ public class TestaCursoComAluno {
 		javaColecoes.matricula(a2);
 		javaColecoes.matricula(a3);
 
-		// System.out.println("Todos os alunos matriculados: ");
+		System.out.println("Todos os alunos matriculados: ");
 		// iteração com expressão lambda
 		javaColecoes.getAlunos().forEach(aluno -> {
 			System.out.println(aluno);
 		});
 		
-		Set<Aluno> alunos = javaColecoes.getAlunos();
+		System.out.println("O aluno " + a1 + " está matriculado?");
+		System.out.println(javaColecoes.estaMatriculado(a1));
+		
+		Aluno turini = new Aluno("Rodrigo Turini", 34672);
+		System.out.println("E esse Turini, está matriculado?");
+		System.out.println(javaColecoes.estaMatriculado(turini));
+		
+		System.out.println("O a1 é == ao Turini?");
+		System.out.println(a1 == turini);
 		
 	}
 }
