@@ -11,7 +11,7 @@ public class Curso {
 	private String nome;
 	private String instrutor;
 	private List<Aula> aulas = new ArrayList<Aula>();
-	private Set<Aluno> alunos = new HashSet<>();
+	private Set<Aluno> alunos = new HashSet<>(); // atributo
 
 	public Curso(String nome, String instrutor) {
 		this.nome = nome;
@@ -51,10 +51,12 @@ public class Curso {
 		return "[Curso: " + nome + ", tempo total: " + this.getTempoTotal() + ", " + "aulas: " + this.aulas + "]";
 	}
 
+	// método que adiciona o aluno ao Set.
 	public void matricula(Aluno aluno) {
 		this.alunos.add(aluno);
 	}
 
+	// método que devolve o Set não modificável.
 	public Set<Aluno> getAlunos() {
 		return Collections.unmodifiableSet(alunos);
 	}
