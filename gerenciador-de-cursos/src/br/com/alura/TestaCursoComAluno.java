@@ -1,5 +1,7 @@
 package br.com.alura;
 
+import java.util.Set;
+
 public class TestaCursoComAluno {
 
 	public static void main(String[] args) {
@@ -17,9 +19,13 @@ public class TestaCursoComAluno {
 		javaColecoes.matricula(a2);
 		javaColecoes.matricula(a3);
 
-		System.out.println("Todos os alunos matriculados: ");
-		javaColecoes.getAlunos().forEach(a -> {
-			System.out.println(a);
+		// System.out.println("Todos os alunos matriculados: ");
+		// iteração com expressão lambda
+		javaColecoes.getAlunos().forEach(aluno -> {
+			System.out.println(aluno);
 		});
+		
+		Set<Aluno> alunos = javaColecoes.getAlunos();
+		
 	}
 }
