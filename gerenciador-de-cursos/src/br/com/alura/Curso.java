@@ -48,5 +48,4 @@ public class Curso {
 		return "[Curso: " + nome + ", tempo total: " + this.getTempoTotal() + ", " + "aulas: " + this.aulas + "]";
 	}
 	
-
 }
