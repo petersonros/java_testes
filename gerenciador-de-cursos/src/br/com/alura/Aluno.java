@@ -21,6 +21,11 @@ public class Aluno {
 	public int getNumeroMatricula() {
 		return numeroMatricula;
 	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		return super.equals(obj);
+	} // reescrevendo o método equals
 
 	// metodo
 	@Override
