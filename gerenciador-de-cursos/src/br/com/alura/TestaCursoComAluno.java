@@ -35,5 +35,8 @@ public class TestaCursoComAluno {
 		System.out.println("O a1 é == ao Turini?");
 		System.out.println(a1 == turini);
 		
+		System.out.println("O a1 é equals ao Turini?");
+		System.out.println(a1.equals(turini));
+		
 	}
 }
