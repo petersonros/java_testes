@@ -29,11 +29,11 @@ public class Curso {
 	public List<Aula> getAulas() {
 		return Collections.unmodifiableList(aulas);
 	}
-	
+
 	public void adiciona(Aula aula) {
 		this.aulas.add(aula);
 	}
-	
+
 //	public int getTempoTotal() {
 //		int tempoTotal = 0;
 //		for (Aula aula : aulas) {
@@ -45,10 +45,18 @@ public class Curso {
 	public int getTempoTotal() {
 		return this.aulas.stream().mapToInt(Aula::getTempo).sum();
 	}
-	
+
 	@Override
 	public String toString() {
 		return "[Curso: " + nome + ", tempo total: " + this.getTempoTotal() + ", " + "aulas: " + this.aulas + "]";
 	}
-	
+
+	public void matricula(Aluno aluno) {
+		this.alunos.add(aluno);
+	}
+
+	public Set<Aluno> getAlunos() {
+		return Collections.unmodifiableSet(alunos);
+	}
+
 }
