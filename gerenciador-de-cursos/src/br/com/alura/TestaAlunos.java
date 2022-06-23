@@ -1,6 +1,8 @@
 package br.com.alura;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class TestaAlunos {
@@ -14,6 +16,8 @@ public class TestaAlunos {
 		alunos.add("Mauricio Aniche");
 		
 		boolean pauloEstaMatriculado = alunos.contains("Paulo Silveira");
+		alunos.remove("Sergio Lopez");
+		
 		System.out.println(pauloEstaMatriculado);
 		
 		for (String aluno : alunos) {
@@ -25,5 +29,9 @@ public class TestaAlunos {
 		});
 		
 		System.out.println(alunos);
+		
+		// transformar um conjunto em uma lista
+		// List<String> alunosEmLista = new ArrayList<>(alunos);
+
 	}
 }
