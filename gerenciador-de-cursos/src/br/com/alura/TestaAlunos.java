@@ -9,6 +9,17 @@ public class TestaAlunos {
 		alunos.add("Rodrigo Turini");
 		alunos.add("Alberto Souza");
 		alunos.add("Nico Steppat");
+		alunos.add("Sergio Lopez");
+		alunos.add("Rena Saggio");
+		alunos.add("Mauricio Aniche");
+		
+		for (String aluno : alunos) {
+			System.out.println(aluno);
+		}
+		
+		alunos.forEach(aluno -> {
+			System.out.println(aluno);
+		});
 		
 		System.out.println(alunos);
 	}
