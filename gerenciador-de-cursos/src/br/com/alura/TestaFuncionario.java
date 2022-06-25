@@ -1,13 +1,8 @@
 package br.com.alura;
 
+import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeSet;
-
-import javax.swing.text.html.HTMLDocument.Iterator;
-
-public class OrdenaPorIdade implements Comparator<Funcionario> {
-	// método comprare
-}
 
 public class TestaFuncionario {
 
@@ -18,14 +13,14 @@ public class TestaFuncionario {
 		Funcionario f3 = new Funcionario("Guaraciara", 13);
 		
 		Set<Funcionario> funcionarios = new TreeSet<>(new OrdenaPorIdade());
-		funcionarios.add(f1);
+		((TreeSet<Funcionario>) funcionarios).add(f1);
 		funcionarios.add(f2);
 		funcionarios.add(f3);
 		
 		Iterator<Funcionario> iterador = funcionarios.iterator();
 		
-		while (Iterator.hasNext()) {
-			System.out.println(iterator.next().getNome());
+		while (iterador.hasNext()) {
+			System.out.println(iterador.next().getNome());
 		}
 	}
 }
