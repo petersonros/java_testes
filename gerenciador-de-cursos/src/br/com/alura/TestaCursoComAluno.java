@@ -1,5 +1,6 @@
 package br.com.alura;
 
+import java.util.Iterator;
 import java.util.Set;
 
 public class TestaCursoComAluno {
@@ -20,6 +21,18 @@ public class TestaCursoComAluno {
 		javaColecoes.matricula(a3);
 
 		System.out.println("Todos os alunos matriculados: ");
+
+		Set<Aluno> alunos = javaColecoes.getAlunos();
+		Iterator<Aluno> iterador = alunos.iterator();
+		while(iterador.hasNext()) {
+			Aluno proximo = iterador.next();
+			System.out.println(proximo);
+		}
+		
+//		for (Aluno a : javaColecoes.getAlunos()) {
+//			System.out.println(a);
+//		}
+		
 		// iteração com expressão lambda
 		javaColecoes.getAlunos().forEach(aluno -> {
 			System.out.println(aluno);
