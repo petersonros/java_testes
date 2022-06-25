@@ -22,6 +22,7 @@ public class TestaCursoComAluno {
 
 		System.out.println("Todos os alunos matriculados: ");
 
+		// interface
 		Set<Aluno> alunos = javaColecoes.getAlunos();
 		Iterator<Aluno> iterador = alunos.iterator();
 		while(iterador.hasNext()) {
