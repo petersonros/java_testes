@@ -1,3 +1,6 @@
+
+.html
+
 # Compiled class file
 *.class
 *.classpath
@@ -28,5 +31,6 @@ hs_err_pid*
 .settings
 .metadata
 sitaxe-basica/.gitignore
+sitaxe-basica/.settings
 ExerciciosTestes/.gitignore
 */.gitignore
